@@ -20,9 +20,7 @@ import java.util.concurrent.TimeUnit
 class DisplayDataAdapter(var arrayList: ArrayList<DisplayModel>) :
     RecyclerView.Adapter<DisplayDataAdapter.ServiceViewHolder>() {
 
-
     lateinit var context: Context
-
     //Declare a variable to hold count down timer's paused status
     private var isPaused = false
     private var isCanceled = false
