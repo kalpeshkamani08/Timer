@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:elevation="@dimen/_6sdp"
+    android:visibility="visible"
+    android:layout_margin="@dimen/_2sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="@dimen/_6sdp">
+
+        <EditText
+            android:id="@+id/etInteger"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_black_border_rounded"
+            android:gravity="center"
+            android:hint="Enter seconds"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/_14sdp"
+            android:singleLine="true"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_black_border_rounded"
+            android:gravity="center"
+            android:hint="00.00.00"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/red"
+            android:padding="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/imgOptionMenu"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center|end"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_option_menu"
+            app:tint="@color/red"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
